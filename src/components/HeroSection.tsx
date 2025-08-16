@@ -39,10 +39,10 @@ export const HeroSection = () => {
             Check Prices
           </Button>
           <Button 
-            variant="outline-light" 
+            variant="secondary" 
             size="lg"
             onClick={() => scrollToSection('booking')}
-            className="text-lg px-8 py-4 h-auto"
+            className="text-lg px-8 py-4 h-auto bg-white text-primary hover:bg-white/90"
           >
             Book Service
           </Button>
