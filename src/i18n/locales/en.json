@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "EcoKabadi",
+    "subtitle": "Professional Scrap Collection",
+    "description": "Turn your waste into wealth with our reliable scrap collection service. We offer fair prices, quick pickup, and hassle-free transactions for all types of recyclable materials.",
+    "checkPrices": "Check Prices",
+    "bookService": "Book Service",
+    "stats": {
+      "customers": "50K+ Happy Customers",
+      "service": "24/7 Service Available",
+      "pricing": "100% Fair Pricing"
+    }
+  },
+  "pricing": {
+    "title": "Today's Market Prices",
+    "subtitle": "Transparent and competitive rates for all your scrap materials. Prices updated daily based on market conditions.",
+    "lastUpdated": "Last updated",
+    "disclaimer": "* Prices may vary based on quality and quantity. Minimum pickup: 10kg",
+    "bulkDiscount": "📞 Call for bulk quantities and get better rates!",
+    "trending": "Trending",
+    "categories": {
+      "paper": "Paper & Cardboard",
+      "plastic": "Plastic Materials",
+      "metal": "Metal Scrap",
+      "electronics": "Electronics"
+    }
+  },
+  "booking": {
+    "title": "Book Pickup Service",
+    "subtitle": "Schedule a convenient pickup time and we'll collect your scrap materials from your doorstep.",
+    "cardTitle": "Schedule Your Pickup",
+    "form": {
+      "fullName": "Full Name",
+      "phone": "Phone Number",
+      "address": "Complete Address",
+      "scrapType": "Scrap Type",
+      "estimatedWeight": "Estimated Weight",
+      "preferredDate": "Preferred Date",
+      "preferredTime": "Preferred Time",
+      "notes": "Additional Notes",
+      "terms": "I agree to the pickup terms and conditions",
+      "submit": "Book Pickup Service",
+      "submitting": "Booking..."
+    },
+    "features": {
+      "freePickup": "Free Pickup",
+      "freePickupDesc": "No charges for pickup service within city limits",
+      "quickResponse": "Quick Response",
+      "quickResponseDesc": "We respond within 30 minutes of booking",
+      "instantPayment": "Instant Payment",
+      "instantPaymentDesc": "Get paid immediately after weighing"
+    },
+    "toast": {
+      "title": "Booking Confirmed!",
+      "description": "We'll contact you within 30 minutes to confirm pickup details."
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have questions? Need a custom quote? We're here to help you with all your scrap collection needs.",
+    "call": "Call Us",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "available247": "Available 24/7",
+    "quickResponse": "Quick response guaranteed",
+    "businessInquiries": "For business inquiries",
+    "callNow": "Call Now",
+    "messageUs": "Message Us",
+    "sendEmail": "Send Email",
+    "serviceAreas": "Service Areas",
+    "freePickup": "Free pickup",
+    "serviceDescription": "Serving Mumbai and surrounding areas since 2015. Contact us for locations not listed above."
+  },
+  "language": {
+    "switch": "Switch Language"
+  }
+}
