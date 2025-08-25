@@ -7,9 +7,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
+import { useTranslation } from 'react-i18next';
 
 export const BookingSection = () => {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -20,8 +22,8 @@ export const BookingSection = () => {
     await new Promise(resolve => setTimeout(resolve, 2000));
     
     toast({
-      title: "Booking Confirmed!",
-      description: "We'll contact you within 30 minutes to confirm pickup details.",
+      title: t('booking.toast.title'),
+      description: t('booking.toast.description'),
       duration: 5000,
     });
     
@@ -42,16 +44,16 @@ export const BookingSection = () => {
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Book Pickup Service
+            {t('booking.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Schedule a convenient pickup time and we'll collect your scrap materials from your doorstep.
+            {t('booking.subtitle')}
           </p>
         </div>
 
         <Card className="shadow-elegant border-primary/10">
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl text-primary">Schedule Your Pickup</CardTitle>
+            <CardTitle className="text-2xl text-primary">{t('booking.cardTitle')}</CardTitle>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -168,7 +170,7 @@ export const BookingSection = () => {
                 variant="success"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Booking..." : "Book Pickup Service"}
+                {isSubmitting ? t('booking.form.submitting') : t('booking.form.submit')}
               </Button>
             </form>
           </CardContent>
@@ -177,18 +179,18 @@ export const BookingSection = () => {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div className="bg-success/10 rounded-lg p-6 border border-success/20">
             <div className="text-2xl mb-2">🚚</div>
-            <h3 className="font-semibold mb-2 text-success">Free Pickup</h3>
-            <p className="text-sm text-muted-foreground">No charges for pickup service within city limits</p>
+            <h3 className="font-semibold mb-2 text-success">{t('booking.features.freePickup')}</h3>
+            <p className="text-sm text-muted-foreground">{t('booking.features.freePickupDesc')}</p>
           </div>
           <div className="bg-success/10 rounded-lg p-6 border border-success/20">
             <div className="text-2xl mb-2">⚡</div>
-            <h3 className="font-semibold mb-2 text-success">Quick Response</h3>
-            <p className="text-sm text-muted-foreground">We respond within 30 minutes of booking</p>
+            <h3 className="font-semibold mb-2 text-success">{t('booking.features.quickResponse')}</h3>
+            <p className="text-sm text-muted-foreground">{t('booking.features.quickResponseDesc')}</p>
           </div>
           <div className="bg-success/10 rounded-lg p-6 border border-success/20">
             <div className="text-2xl mb-2">💰</div>
-            <h3 className="font-semibold mb-2 text-success">Instant Payment</h3>
-            <p className="text-sm text-muted-foreground">Get paid immediately after weighing</p>
+            <h3 className="font-semibold mb-2 text-success">{t('booking.features.instantPayment')}</h3>
+            <p className="text-sm text-muted-foreground">{t('booking.features.instantPaymentDesc')}</p>
           </div>
         </div>
       </div>

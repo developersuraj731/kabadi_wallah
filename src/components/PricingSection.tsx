@@ -1,7 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from 'react-i18next';
 
 export const PricingSection = () => {
+  const { t } = useTranslation();
   const priceData = [
     {
       category: "Paper & Cardboard",
@@ -50,14 +52,14 @@ export const PricingSection = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Today's Market Prices
+            {t('pricing.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Transparent and competitive rates for all your scrap materials. Prices updated daily based on market conditions.
+            {t('pricing.subtitle')}
           </p>
           <div className="mt-4">
             <Badge variant="outline" className="bg-success/10 text-success border-success/30">
-              Last updated: {new Date().toLocaleDateString()}
+              {t('pricing.lastUpdated')}: {new Date().toLocaleDateString()}
             </Badge>
           </div>
         </div>
@@ -82,7 +84,7 @@ export const PricingSection = () => {
                       <div className="font-bold text-success">{item.price}</div>
                       {item.trending && (
                         <Badge variant="outline" className="text-xs bg-success/10 text-success border-success/30">
-                          Trending
+                          {t('pricing.trending')}
                         </Badge>
                       )}
                     </div>
@@ -95,11 +97,11 @@ export const PricingSection = () => {
         
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground mb-4">
-            * Prices may vary based on quality and quantity. Minimum pickup: 10kg
+            {t('pricing.disclaimer')}
           </p>
           <div className="bg-success/10 border border-success/30 rounded-lg p-4 max-w-md mx-auto">
             <p className="text-success font-medium">
-              📞 Call for bulk quantities and get better rates!
+              {t('pricing.bulkDiscount')}
             </p>
           </div>
         </div>
