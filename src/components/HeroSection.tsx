@@ -19,7 +19,7 @@ export const HeroSection = () => {
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          EcoKabadi
+          Kabadi Wallah
           <span className="block text-3xl md:text-4xl font-normal mt-2 opacity-90">
             Professional Scrap Collection
           </span>
@@ -50,7 +50,7 @@ export const HeroSection = () => {
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-3xl font-bold mb-2">50K+</div>
+            <div className="text-3xl font-bold mb-2">500+</div>
             <div className="text-sm opacity-80">Happy Customers</div>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">

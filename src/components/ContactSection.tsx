@@ -21,7 +21,7 @@ export const ContactSection = () => {
               <CardTitle className="text-primary">Call Us</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-2xl font-bold mb-2">+91 98765 43210</p>
+              <p className="text-2xl font-bold mb-2">+91 95174 68656</p>
               <p className="text-muted-foreground mb-4">Available 24/7</p>
               <Button variant="outline" className="w-full">
                 Call Now
@@ -35,7 +35,7 @@ export const ContactSection = () => {
               <CardTitle className="text-primary">WhatsApp</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-2xl font-bold mb-2">+91 98765 43210</p>
+              <p className="text-2xl font-bold mb-2">+91 95174 68656</p>
               <p className="text-muted-foreground mb-4">Quick response guaranteed</p>
               <Button variant="success" className="w-full">
                 Message Us
@@ -49,7 +49,7 @@ export const ContactSection = () => {
               <CardTitle className="text-primary">Email</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg font-bold mb-2">contact@ecokabadi.com</p>
+              <p className="text-lg font-bold mb-2">kabadiwallah01@gmail.com</p>
               <p className="text-muted-foreground mb-4">For business inquiries</p>
               <Button variant="outline" className="w-full">
                 Send Email
@@ -66,24 +66,24 @@ export const ContactSection = () => {
             <CardContent>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                 <div className="p-4 bg-secondary/50 rounded-lg">
-                  <div className="font-semibold">Central Mumbai</div>
+                  <div className="font-semibold">Ballia</div>
                   <div className="text-sm text-muted-foreground">Free pickup</div>
                 </div>
                 <div className="p-4 bg-secondary/50 rounded-lg">
-                  <div className="font-semibold">Western Suburbs</div>
+                  <div className="font-semibold">Mau</div>
                   <div className="text-sm text-muted-foreground">Free pickup</div>
                 </div>
                 <div className="p-4 bg-secondary/50 rounded-lg">
-                  <div className="font-semibold">Eastern Suburbs</div>
+                  <div className="font-semibold">Ghazipur</div>
                   <div className="text-sm text-muted-foreground">Free pickup</div>
                 </div>
-                <div className="p-4 bg-secondary/50 rounded-lg">
+                {/* <div className="p-4 bg-secondary/50 rounded-lg">
                   <div className="font-semibold">Navi Mumbai</div>
                   <div className="text-sm text-muted-foreground">₹50 charge</div>
-                </div>
+                </div> */}
               </div>
               <p className="mt-6 text-sm text-muted-foreground">
-                Serving Mumbai and surrounding areas since 2015. Contact us for locations not listed above.
+                Serving Ballia and surrounding areas since 1990. Contact us for locations not listed above.
               </p>
             </CardContent>
           </Card>

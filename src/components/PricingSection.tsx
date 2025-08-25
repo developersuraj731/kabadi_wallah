@@ -95,7 +95,7 @@ export const PricingSection = () => {
         
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground mb-4">
-            * Prices may vary based on quality and quantity. Minimum pickup: 10kg
+            * Prices may vary based on quality and quantity. Minimum pickup: 5kg
           </p>
           <div className="bg-success/10 border border-success/30 rounded-lg p-4 max-w-md mx-auto">
             <p className="text-success font-medium">
