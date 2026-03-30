@@ -27,7 +27,7 @@ export const HeroSection = () => {
       
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Kabadi Wallah
+          {t('hero.mainTitle')}
           <span className="block text-3xl md:text-4xl font-normal mt-2 opacity-90">
             {t('hero.subtitle')}
           </span>
