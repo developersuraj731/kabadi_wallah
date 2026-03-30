@@ -287,23 +287,23 @@ export const BookingSection = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Full Name *</Label>
+                  <Label htmlFor="name">{t("booking.form.fullName")}*</Label>
                   <Input id="name" name="name" placeholder="Enter your full name" required />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="phone">Phone Number *</Label>
+                  <Label htmlFor="phone">{t("booking.form.phone")} *</Label>
                   <Input id="phone" name="phone" type="tel" placeholder="+91 98765 43210" required />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="address">Complete Address *</Label>
+                <Label htmlFor="address">{t("booking.form.address")} *</Label>
                 <Textarea id="address" name="address" placeholder="Enter your complete address with landmark" required />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="scrapType">Scrap Type *</Label>
+                  <Label htmlFor="scrapType">{t("booking.form.scrapType")} *</Label>
                   <Select name="scrapType" required>
                     <SelectTrigger>
                       <SelectValue placeholder="Select scrap type" />
@@ -316,18 +316,18 @@ export const BookingSection = () => {
                   </Select>
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="estimatedWeight">Estimated Weight</Label>
+                  <Label htmlFor="estimatedWeight">{t("booking.form.estimatedWeight")}</Label>
                   <Input id="estimatedWeight" name="estimatedWeight" placeholder="e.g., 25" type="number" />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <Label htmlFor="preferredDate">Preferred Date *</Label>
+                  <Label htmlFor="preferredDate">{t("booking.form.preferredDate")} *</Label>
                   <Input id="preferredDate" name="preferredDate" type="date" required min={new Date().toISOString().split('T')[0]} />
                 </div>
                 <div className="space-y-2">
-                  <Label htmlFor="preferredTime">Preferred Time *</Label>
+                  <Label htmlFor="preferredTime">{t("booking.form.preferredTime")} *</Label>
                   <Select name="preferredTime" required>
                     <SelectTrigger>
                       <SelectValue placeholder="Select time slot" />
@@ -342,13 +342,13 @@ export const BookingSection = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="notes">Additional Notes</Label>
+                <Label htmlFor="notes">{t("booking.form.notes")}</Label>
                 <Textarea id="notes" name="notes" placeholder="Any special instructions or additional information" />
               </div>
 
               <div className="flex items-center space-x-2">
                 <Checkbox id="terms" required />
-                <Label htmlFor="terms" className="text-sm">I agree to the pickup terms and conditions *</Label>
+                <Label htmlFor="terms" className="text-sm">{t("booking.form.terms")} *</Label>
               </div>
 
               <Button type="submit" className="w-full" size="lg" variant="success" disabled={isSubmitting}>
