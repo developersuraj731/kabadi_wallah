@@ -231,7 +231,7 @@ export const BookingSection = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:5000/api/users", {
+      const res = await fetch("https://kabadi-wallah-backend.vercel.app/api/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
@@ -242,7 +242,7 @@ export const BookingSection = () => {
       toast({
         title: "✅ Booking Confirmed",
         description: "Your scrap pickup request has been saved successfully.",
-        duration: 5000,
+        duration: 3000,
       });
 
       e.currentTarget.reset(); // clear form

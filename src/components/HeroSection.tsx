@@ -58,7 +58,7 @@ export const HeroSection = () => {
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-            <div className="text-3xl font-bold mb-2">500</div>
+            <div className="text-3xl font-bold mb-2">500 +</div>
             <div className="text-sm opacity-80">{t("hero.stats.customers")}</div>
           </div>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">

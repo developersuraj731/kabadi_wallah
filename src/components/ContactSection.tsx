@@ -52,7 +52,7 @@ export const ContactSection = () => {
               <CardTitle className="text-primary">{t('contact.email')}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg font-bold mb-2">kabadiwallah01@gmail.com</p>
+              <p className="text-lg font-bold mb-2">Kabadsathi5@gmail.com</p>
               <p className="text-muted-foreground mb-4">For business inquiries</p>
               <Button variant="outline" className="w-full">
                 {t('contact.sendEmail')}
