@@ -8,8 +8,8 @@ export const PricingSection = () => {
     {
       category: "Paper & Cardboard",
       items: [
-        { name: "Newspaper", price: "₹12-15", unit: "per kg", trending: true },
-        { name: "Magazines", price: "₹8-12", unit: "per kg" },
+        { name: "Newspaper", price: "₹10-12", unit: "per kg", trending: true },
+        { name: "Books / Magazines", price: "₹8-12", unit: "per kg" },
         { name: "Cardboard", price: "₹6-10", unit: "per kg" },
         { name: "Office Paper", price: "₹10-14", unit: "per kg" },
       ],
@@ -21,7 +21,7 @@ export const PricingSection = () => {
         { name: "Plastic Bottles", price: "₹15-20", unit: "per kg", trending: true },
         { name: "Plastic Bags", price: "₹8-12", unit: "per kg" },
         { name: "Hard Plastic", price: "₹12-18", unit: "per kg" },
-        { name: "PET Bottles", price: "₹18-25", unit: "per kg" },
+        { name: "PET Bottles", price: "₹15-20", unit: "per kg" },
       ],
       icon: "♻️"
     },
@@ -30,17 +30,17 @@ export const PricingSection = () => {
       items: [
         { name: "Aluminum", price: "₹120-150", unit: "per kg", trending: true },
         { name: "Copper", price: "₹400-450", unit: "per kg" },
-        { name: "Iron/Steel", price: "₹25-35", unit: "per kg" },
+        { name: "Iron/Steel", price: "₹25-30", unit: "per kg" },
         { name: "Brass", price: "₹280-320", unit: "per kg" },
       ],
       icon: "🔧"
     },
     {
-      category: "Electronics",
+      category: "Electronics & E-Waste",
       items: [
         { name: "Mobile Phones", price: "₹200-2000", unit: "per piece", trending: true },
         { name: "Laptops", price: "₹1000-5000", unit: "per piece" },
-        { name: "CRT TVs", price: "₹500-1500", unit: "per piece" },
+        { name: "CRT TVs", price: "₹500-1000", unit: "per piece" },
         { name: "Circuit Boards", price: "₹150-300", unit: "per kg" },
       ],
       icon: "📱"
