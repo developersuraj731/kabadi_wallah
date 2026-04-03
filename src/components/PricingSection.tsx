@@ -96,9 +96,9 @@ export const PricingSection = () => {
         </div>
         
         <div className="mt-12 text-center">
-          <p className="text-sm text-muted-foreground mb-4">
-            * Prices may vary based on quality and quantity. Minimum pickup: ₹200
-          </p>
+            <p className="text-sm text-blue-700 mb-4 animate-pulse">
+              * Prices may vary based on quality and quantity. Minimum pickup: ₹200
+            </p>
           <div className="bg-success/10 border border-success/30 rounded-lg p-4 max-w-md mx-auto">
             <p className="text-success font-medium">
               {t('pricing.bulkDiscount')}
